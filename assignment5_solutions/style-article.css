@@ -1,0 +1,28 @@
+/* Article styling */
+body{font-family: Georgia, 'Times New Roman', serif; padding:2rem; background:#fffbe6}
+header h1{font-size:2.25rem;margin-bottom:0.25rem}
+.sub{font-style:italic;color:#555;margin-bottom:1rem}
+
+/* consistent spacing between paragraphs */
+article p{margin:1rem 0; text-align:justify; font-size:1rem; line-height:1.8}
+
+/* style first letter and first line */
+article p::first-letter{
+  font-size:2.25rem;
+  font-weight:700;
+  float:left;
+  margin-right:0.25rem;
+  line-height:1;
+}
+article p::first-line{font-weight:700}
+
+/* mark styling */
+mark{background:#ffeaa7; padding:0.1rem 0.15rem; border-radius:2px}
+
+/* blockquote emphasis */
+blockquote{
+  margin:1.5rem 0;
+  padding:1rem 1.25rem;
+  border-left:6px solid #f1c40f;
+  background:#fff6da;
+}
