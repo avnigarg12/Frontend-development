@@ -1,0 +1,35 @@
+/* Pricing table using grid for equal columns */
+body{font-family:Arial, Helvetica, sans-serif;padding:2rem;background:#f3f6f9}
+h1{text-align:center;margin-bottom:1.25rem}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;align-items:stretch}
+
+/* plan boxes */
+.plan{
+  padding:1.25rem;
+  border-radius:12px;
+  border:2px solid #e6eef6;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  transition:transform 250ms ease, background 250ms ease;
+  min-height:260px; /* equal height */
+}
+.plan .price{font-size:1.5rem;font-weight:700;margin:0.5rem 0}
+
+/* hover effect with transition */
+.plan:hover{
+  transform:scale(1.03);
+  background:#ffffff;
+}
+
+/* highlight most popular */
+.plan.popular{
+  border-color:#ffb86b;
+  background:linear-gradient(180deg, #fff7ed, #fff3e6);
+}
+
+/* responsive */
+@media (max-width:700px){
+  .plans{grid-template-columns:1fr}
+}
+.btn{display:inline-block;padding:0.5rem 1rem;text-decoration:none;border-radius:6px;border:1px solid #cbd5e1;margin-top:1rem}

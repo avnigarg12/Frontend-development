@@ -1,0 +1,29 @@
+/* Demonstrate box model, positioning, flex/grid, rgba, gradients */
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial, Helvetica, sans-serif;background:linear-gradient(180deg, rgba(240,248,255,0.6), rgba(250,250,255,1))}
+.sticky-header{position:sticky;top:0;background:#0b1320;color:#fff;padding:0.75rem 1rem}
+.hero{height:50vh;background-image:url('https://via.placeholder.com/1600x800');background-size:cover;display:flex;align-items:center;justify-content:center;position:relative}
+.hero-text{background:rgba(0,0,0,0.45);color:#fff;padding:1.25rem 2rem;border-radius:8px;font-size:1.5rem}
+
+/* About two-column using grid */
+.about{display:grid;grid-template-columns:1fr 320px;gap:1rem;padding:2rem;align-items:center}
+.about-img img{width:100%;display:block;border-radius:8px}
+
+/* Services three boxes */
+.services{display:flex;gap:1rem;padding:1rem}
+.service{flex:1;padding:1rem;background:#fff;border:1px solid rgba(0,0,0,0.06);box-shadow:0 8px 24px rgba(10,20,30,0.05);border-radius:8px}
+
+/* Contact form */
+.contact{padding:1.5rem}
+.contact form{display:flex;gap:0.5rem}
+.contact input{padding:0.6rem;border:1px solid #cfd8e3;border-radius:6px;flex:1}
+.contact button{padding:0.6rem 1rem;border-radius:6px;border:none;background:#4f46e5;color:#fff}
+
+/* box-model properties demonstration */
+footer{padding:1rem;text-align:center;border-top:4px solid rgba(79,70,229,0.08);margin-top:1rem}
+
+/* responsive adjustments */
+@media (max-width:800px){
+  .about{grid-template-columns:1fr}
+  .services{flex-direction:column}
+}
