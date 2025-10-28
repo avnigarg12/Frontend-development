@@ -1,0 +1,31 @@
+*{box-sizing:border-box}
+body{height:100vh; margin:0; display:flex; align-items:center; justify-content:center; background:#f5f7fb}
+.loader{
+  display:flex;
+  gap:14px;
+  align-items:flex-end;
+  justify-content:center;
+  height:80px;
+}
+.dot{
+  width:16px;
+  height:16px;
+  border-radius:50%;
+  background:#2b7cff;
+  transform: translateY(0);
+  animation: bounce 0.8s infinite;
+}
+
+/* delays for each circle */
+.dot1{animation-delay:0s}
+.dot2{animation-delay:0.12s}
+.dot3{animation-delay:0.24s}
+
+/* move up and down using translateY */
+@keyframes bounce{
+  0%{ transform: translateY(0) }
+  25%{ transform: translateY(-18px) }
+  50%{ transform: translateY(0) }
+  75%{ transform: translateY(-8px) }
+  100%{ transform: translateY(0) }
+}

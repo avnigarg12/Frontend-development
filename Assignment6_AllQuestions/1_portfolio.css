@@ -1,0 +1,72 @@
+:root{
+  --gap: 20px;
+  --max-width: 1100px;
+  --accent: #2b7cff;
+  --bg: #f7f9fc;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:var(--bg);
+  color:#111;
+  display:flex;
+  flex-direction:column;
+  min-height:100vh;
+  align-items:center;
+}
+
+.site-header{
+  width:100%;
+  max-width:var(--max-width);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:16px;
+  gap:var(--gap);
+}
+.name{font-weight:700; font-size:1.25rem}
+.nav{display:flex; gap:16px}
+.nav a{text-decoration:none; color:#333; padding:8px; border-radius:6px}
+.nav a:hover{background:#e8f0ff; color:var(--accent)}
+
+.main{
+  width:100%;
+  max-width:var(--max-width);
+  display:flex;
+  gap:var(--gap);
+  padding:20px;
+  align-items:center;
+  justify-content:center;
+}
+
+.about, .photo{
+  flex:1 1 0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:16px;
+  background:white;
+  border-radius:10px;
+  box-shadow:0 6px 18px rgba(15,15,15,0.05);
+}
+
+.about{flex-direction:column; text-align:left}
+.photo img{max-width:100%; height:auto; border-radius:8px; display:block}
+
+/* Center items vertically/horizontally on smaller screens too */
+.site-footer{
+  width:100%;
+  max-width:var(--max-width);
+  text-align:center;
+  margin-top:auto;
+  padding:16px 0;
+  color:#666;
+}
+
+/* Responsive: below 700px stack vertically */
+@media (max-width:700px){
+  .main{flex-direction:column; align-items:center}
+  .nav{gap:10px; font-size:0.95rem}
+}

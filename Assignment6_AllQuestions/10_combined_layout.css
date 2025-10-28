@@ -1,0 +1,55 @@
+*{box-sizing:border-box}
+body{margin:0; font-family:system-ui; background:#fbfcff; color:#111}
+
+/* header uses flexbox */
+.header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:16px 24px;
+  background:white;
+  box-shadow:0 6px 20px rgba(0,0,0,0.04);
+}
+.logo{font-weight:800}
+.nav{display:flex; gap:12px}
+.nav a{text-decoration:none; padding:8px}
+
+/* main uses grid: 2 columns - article + sidebar */
+.main-grid{
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+  gap:20px;
+  max-width:1100px;
+  margin:24px auto;
+  padding:0 16px;
+}
+
+/* inside article: use flexbox for 3 boxes */
+.article-boxes{
+  display:flex;
+  gap:12px;
+  margin:12px 0;
+}
+.abox{
+  background:white;
+  padding:12px;
+  border-radius:8px;
+  flex:1 1 0;
+  text-align:center;
+}
+
+/* animate the title on load */
+@keyframes titleIn{
+  from{opacity:0; transform: translateY(16px)}
+  to{opacity:1; transform: translateY(0)}
+}
+.title{animation: titleIn 0.7s ease both}
+
+/* footer spans full width */
+.footer{background:#f5f6fb; text-align:center; padding:12px; margin-top:24px}
+
+/* collapse to single column on mobile */
+@media (max-width:700px){
+  .main-grid{grid-template-columns:1fr}
+  .article-boxes{flex-direction:column}
+}

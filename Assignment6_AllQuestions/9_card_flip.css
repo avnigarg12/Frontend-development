@@ -1,0 +1,39 @@
+*{box-sizing:border-box}
+body{margin:0; height:100vh; display:flex; align-items:center; justify-content:center; font-family:system-ui; background:#eef2f8}
+
+/* center using flexbox */
+.stage{display:flex; align-items:center; justify-content:center; perspective:1000px; width:100%}
+
+.flip-card{
+  width:320px;
+  height:260px;
+  position:relative;
+  transform-style:preserve-3d;
+  transition: transform 0.8s cubic-bezier(.2,.8,.2,1);
+}
+
+/* On hover rotate */
+.flip-card:hover{ transform: rotateY(180deg) }
+
+.card-face{
+  position:absolute;
+  width:100%;
+  height:100%;
+  backface-visibility:hidden;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 12px 36px rgba(0,0,0,0.12);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:14px;
+  background:white;
+}
+
+/* back face rotated */
+.back{ transform: rotateY(180deg); text-align:center }
+
+/* front face specifics */
+.front img{width:100%; height:140px; object-fit:cover; display:block}
+.front h2{margin:12px 0 0 0}
