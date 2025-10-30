@@ -1,0 +1,17 @@
+body, html { margin: 0; height: 100%; }
+header, footer {
+  text-align: center; padding: 10px; background: #333; color: white;
+  position: fixed; width: 100%; left: 0;
+}
+header { top: 0; }
+footer { bottom: 0; }
+main { margin-top: 50px; margin-bottom: 50px; }
+.linear {
+  height: 50vh;
+  background: linear-gradient(to right, red, orange, yellow);
+}
+.radial {
+  height: 50vh;
+  background: radial-gradient(circle, blue, lightblue);
+  background-attachment: fixed;
+}
