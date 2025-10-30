@@ -1,0 +1,18 @@
+.box-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+.box {
+  padding: 20px;
+  width: 150px;
+  text-align: center;
+  border-width: 5px;
+  border-radius: 10px;
+  transition: border-color 0.4s ease;
+}
+.solid { border-style: solid; border-color: blue; }
+.dashed { border-style: dashed; border-color: green; }
+.double { border-style: double; border-color: red; }
+.groove { border-style: groove; border-color: purple; }
+.box:hover { border-color: orange; }
