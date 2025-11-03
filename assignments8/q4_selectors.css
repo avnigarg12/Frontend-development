@@ -1,0 +1,25 @@
+/* Q4 - Selectors Practice */
+
+/* Element selector: styles all paragraphs */
+p{color:#222;font-size:15px;}
+
+/* Class selector: .highlight */
+.highlight{background:#fff3cd;padding:8px;border-radius:6px;}
+
+/* ID selector: #unique */
+#unique{font-weight:700;color:#0b5ed7;}
+
+/* Attribute selector: select elements with data-role */
+a[data-role="nav"]{text-decoration:none;padding:6px 8px;border-radius:6px;background:#e9f7ff;display:inline-block;}
+
+/* Child combinator: .box > .child */
+.box > .child{display:inline-block;padding:6px;background:#f1f3f5;border-radius:6px;margin-top:6px;}
+
+/* Adjacent sibling: h3 + p.after */
+h3 + p.after{font-style:italic;color:#4b5563;}
+
+/* Basic page layout & spacing */
+body{font-family:system-ui,Segoe UI,Roboto;margin:18px;background:#fbfcfe;}
+header h1{margin-bottom:12px;}
+main{display:block;gap:12px;}
+footer{margin-top:20px;color:#6b7280;}

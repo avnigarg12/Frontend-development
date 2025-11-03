@@ -1,0 +1,14 @@
+/* Q9 - Combined Effects */
+*{box-sizing:border-box;}
+body{font-family:system-ui,Segoe UI,Roboto;margin:0;padding:30px;background:#f8fbff;}
+.examples{display:flex;gap:18px;justify-content:center;align-items:center;}
+.combo{padding:12px 18px;border-radius:10px;border:none;background:#007bff;color:white;cursor:pointer;box-shadow:0 8px 24px rgba(0,123,255,0.12);transition:transform .22s ease,box-shadow .22s ease,background .22s ease;}
+.combo:hover{transform:translateY(-6px) scale(1.03);box-shadow:0 20px 40px rgba(0,123,255,0.18);background:#0056b3;}
+.combo:focus{outline:none;box-shadow:0 0 0 6px rgba(0,123,255,0.12);}
+.combo:active{transform:translateY(-2px) scale(.99);}
+
+/* variations */
+.combo.alt{background:#6f42c1;}
+.combo.alt:hover{background:#5a2ea5;}
+.combo.alt2{background:#198754;}
+.combo.alt2:hover{background:#12643f;}

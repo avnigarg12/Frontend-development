@@ -1,0 +1,16 @@
+/* Q6 - Animations */
+*{box-sizing:border-box;}
+body{font-family:system-ui,Segoe UI,Roboto;margin:0;padding:30px;background:#f7fbff;display:flex;align-items:center;justify-content:center;height:100vh;}
+.center{text-align:center;}
+.animations{display:flex;gap:28px;align-items:center;justify-content:center;}
+.box{width:80px;height:40px;background:#0d6efd;border-radius:6px;animation:slide 2s ease-in-out infinite alternate;}
+.ball{width:50px;height:50px;border-radius:50%;background:#ff6b6b;animation:bounce 1.2s ease-in-out infinite;animation-delay:.2s;}
+.text{font-weight:700;font-size:18px;animation:colorShift 4s ease-in-out infinite;animation-direction:alternate;}
+
+/* keyframes */
+@keyframes slide{from{transform:translateY(0)}to{transform:translateY(-30px)}}
+@keyframes bounce{0%{transform:translateY(0)}50%{transform:translateY(-36px)}100%{transform:translateY(0)}}
+@keyframes colorShift{from{color:#0d6efd}to{color:#ff6b6b}}
+
+/* tuning */
+@media (max-width:600px){.animations{flex-direction:column;gap:16px;}}

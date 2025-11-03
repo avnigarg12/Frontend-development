@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Q4 - Selectors Practice</title>
+  <link rel="stylesheet" href="q4_selectors.css" />
+</head>
+<body>
+  <header><h1>CSS Selectors Practice</h1></header>
+  <main>
+    <section>
+      <h2>Element Selector</h2>
+      <p>This paragraph is styled by an element selector (p).</p>
+    </section>
+
+    <section>
+      <h2>Class &amp; ID</h2>
+      <p class="highlight">Class selector example (class="highlight")</p>
+      <p id="unique">ID selector example (id="unique")</p>
+    </section>
+
+    <section>
+      <h2>Attribute Selector</h2>
+      <a href="#" title="external" data-role="nav">Link with data-role attribute</a>
+    </section>
+
+    <section>
+      <h2>Combinators</h2>
+      <div class="box">
+        <p>Parent &gt; child selector:</p>
+        <span class="child">Child span</span>
+      </div>
+      <p>Sibling + selector:</p>
+      <h3>Heading</h3><p class="after">Paragraph immediately after heading.</p>
+    </section>
+  </main>
+  <footer>Footer — End of selectors practice</footer>
+</body>
+</html>
