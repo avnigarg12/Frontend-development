@@ -1,0 +1,13 @@
+/* Q8 - Box-sizing Comparison */
+*{box-sizing:border-box;} /* page default */
+body{font-family:system-ui,Segoe UI,Roboto;margin:0;padding:24px;background:#fbfdff;color:#111;}
+.center{max-width:900px;margin:0 auto;text-align:center;}
+.compare{display:flex;gap:20px;justify-content:center;align-items:flex-start;margin:18px 0;flex-wrap:wrap;}
+.box{width:300px;padding:20px;border-radius:10px;border:6px solid #0d6efd;background:#fff;}
+
+/* Make one use content-box explicitly to show difference */
+.default{box-sizing:content-box;background:#fff7ed;}
+.borderbox{box-sizing:border-box;background:#f0fbff;}
+
+/* responsive */
+@media (max-width:720px){.compare{flex-direction:column;align-items:center}.box{width:90%;}}

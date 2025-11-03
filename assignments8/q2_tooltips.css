@@ -1,0 +1,17 @@
+/* Q2 - Tooltip CSS */
+*{box-sizing:border-box;}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto;margin:0;background:#f4f7fb;color:#111;padding:40px;}
+.center{display:flex;flex-direction:column;align-items:center;gap:20px;}
+.icons{display:flex;gap:40px;align-items:center;}
+.tip-wrapper{position:relative;display:flex;flex-direction:column;align-items:center;}
+.icon{font-size:36px;cursor:default;padding:12px;background:white;border-radius:10px;box-shadow:0 6px 18px rgba(2,6,23,0.06);}
+
+/* tooltip itself is hidden by default and fades in on hover */
+.tooltip{position:absolute;bottom:100%;left:50%;transform:translateX(-50%) translateY(-8px);white-space:nowrap;padding:8px 10px;border-radius:6px;background:#111;color:white;font-size:14px;opacity:0;pointer-events:none;transition:opacity .3s ease-in-out,transform .3s ease-in-out;z-index:20;}
+.tip-wrapper:hover .tooltip{opacity:1;transform:translateX(-50%) translateY(-14px);}
+
+/* small arrow */
+.tooltip::after{content:'';position:absolute;top:100%;left:50%;transform:translateX(-50%);border-width:6px;border-style:solid;border-color:#111 transparent transparent transparent;}
+
+/* responsive: stack icons */
+@media (max-width:520px){.icons{flex-direction:column;}}

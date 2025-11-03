@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Q8 - Box-Sizing Comparison</title>
+  <link rel="stylesheet" href="q8_box_sizing.css" />
+</head>
+<body>
+  <main class="center">
+    <h1>Box-Sizing Comparison</h1>
+    <section class="compare">
+      <div class="box default">
+        <h2>Default content-box</h2>
+        <p>Width: 300px; padding:20px; border:6px solid #0d6efd;</p>
+      </div>
+      <div class="box borderbox">
+        <h2>box-sizing: border-box</h2>
+        <p>Width: 300px; padding:20px; border:6px solid #0d6efd;</p>
+      </div>
+    </section>
+    <p class="explain">When using <code>box-sizing: border-box</code>, padding and border are included in the element's total width.</p>
+  </main>
+</body>
+</html>

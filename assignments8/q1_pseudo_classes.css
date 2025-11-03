@@ -1,0 +1,29 @@
+/* Q1 - Pseudo-Classes CSS */
+/* Page layout */
+:root{--accent:#007bff;}
+*{box-sizing:border-box;}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto;line-height:1.4;margin:0;padding:20px;background:#f8fafc;color:#111;}
+header h1{margin:0 0 16px;}
+main{display:flex;justify-content:center;}
+.examples{display:flex;gap:20px;flex-wrap:wrap;align-items:flex-start;}
+.example{background:#fff;padding:16px;border-radius:10px;box-shadow:0 4px 14px rgba(2,6,23,0.06);width:220px;}
+.example h2{font-size:16px;margin:0 0 8px;}
+.link-hover{display:inline-block;padding:8px 12px;border-radius:6px;text-decoration:none;background:#e6f0ff;color:var(--accent);}
+/* :hover example */
+.link-hover:hover{background:var(--accent);color:white;transform:translateY(-4px);box-shadow:0 8px 18px rgba(0,123,255,0.2);transition:all .22s ease;}
+
+/* :focus example */
+.btn-focus{padding:8px 12px;border-radius:6px;border:1px solid #cfd8e3;background:white;cursor:pointer;}
+.btn-focus:focus{outline:none;box-shadow:0 0 0 4px rgba(0,123,255,0.12);transform:scale(1.02);}
+
+/* :active example */
+.link-active{display:inline-block;padding:8px 10px;border-radius:6px;background:#fff;border:1px solid #d0d7e2;text-decoration:none;color:#333;}
+.link-active:active{transform:translateY(2px) scale(.98);background:#e9f5ff;border-color:var(--accent);color:var(--accent);}
+
+/* :nth-child example */
+.nth-list{padding-left:18px;}
+.nth-list li{padding:6px 8px;border-radius:6px;margin-bottom:6px;background:#f6f8fa;}
+.nth-list li:nth-child(even){background:#eaf4ff;color:var(--accent);transform:translateX(4px);}
+
+/* small responsive tweak */
+@media (max-width:700px){.examples{flex-direction:column;align-items:stretch}.example{width:100%;}}

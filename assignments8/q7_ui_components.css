@@ -1,0 +1,10 @@
+/* Q7 - UI Components */
+*{box-sizing:border-box;}
+body{margin:0;font-family:system-ui,Segoe UI,Roboto;background:linear-gradient(135deg,#f6f9ff,#eef7ff);display:flex;align-items:center;justify-content:center;height:100vh;padding:20px;}
+.card{background:white;padding:22px;border-radius:14px;box-shadow:0 14px 36px rgba(2,6,23,0.08);width:100%;max-width:720px;}
+.controls{display:flex;gap:12px;align-items:center;}
+.search{flex:1;padding:10px 12px;border-radius:8px;border:1px solid #e6ecf8;}
+.search:focus{outline:none;box-shadow:0 0 0 4px rgba(0,123,255,0.08);}
+.select{padding:10px;border-radius:8px;border:1px solid #e6ecf8;background:white;}
+.btn{padding:10px 14px;border-radius:8px;background:#007bff;color:white;border:none;cursor:pointer;box-shadow:0 8px 18px rgba(0,123,255,0.12);}
+.btn:hover{transform:translateY(-3px);}
