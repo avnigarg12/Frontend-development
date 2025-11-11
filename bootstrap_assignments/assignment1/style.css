@@ -1,0 +1,7 @@
+/* Assignment 1: Company Landing Page
+Key Bootstrap classes used:
+- .container: centers page content with horizontal padding
+- .row, .col-md-6: responsive grid columns
+- .btn, .btn-primary: styled button
+*/
+body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
