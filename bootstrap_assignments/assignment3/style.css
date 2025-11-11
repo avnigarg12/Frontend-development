@@ -1,0 +1,5 @@
+/* Assignment 3: Uses .row and .col-md-3 for 4-column grid.
+Hover effect via .shadow-sm and CSS transition.
+*/
+.product-card { transition: transform .15s ease, box-shadow .15s ease; }
+.product-card:hover { transform: translateY(-6px); box-shadow: 0 10px 25px rgba(0,0,0,0.12); }

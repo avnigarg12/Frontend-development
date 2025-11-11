@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Travel Showcase - Assignment 10</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <div id="travelCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1400&q=80" class="d-block w-100" alt="beach">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Sunny Beaches</h5>
+            <p>Relax on white sand shores.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1400&q=80" class="d-block w-100" alt="mountain">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Mountain Adventures</h5>
+            <p>Explore high altitude trails.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3500">
+          <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=1400&q=80" class="d-block w-100" alt="city">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>City Escapes</h5>
+            <p>Discover vibrant city life.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#travelCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#travelCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="container py-4">
+      <h4>Booking Progress</h4>
+      <div class="progress" style="height: 24px;">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%;">70%</div>
+      </div>
+    </div>
+
+    <footer class="bg-light py-3">
+      <div class="container text-center">Contact: info@travelco.com | © 2025 TravelCo</div>
+    </footer>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
