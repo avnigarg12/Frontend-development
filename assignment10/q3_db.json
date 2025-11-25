@@ -1,0 +1,34 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Clean desk",
+      "priority": "Low",
+      "completed": false
+    },
+    {
+      "id": 2,
+      "title": "Fix server",
+      "priority": "High",
+      "completed": false
+    },
+    {
+      "id": 3,
+      "title": "Prepare report",
+      "priority": "Medium",
+      "completed": true
+    },
+    {
+      "id": 4,
+      "title": "Team meeting",
+      "priority": "Low",
+      "completed": false
+    },
+    {
+      "id": 5,
+      "title": "Update docs",
+      "priority": "High",
+      "completed": true
+    }
+  ]
+}
