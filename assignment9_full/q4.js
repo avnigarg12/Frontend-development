@@ -1,0 +1,1 @@
+$(function(){ $('#hide').click(()=>$('.b').hide()); $('#show').click(()=>$('.b').show()); $('#slide').click(()=>$('.b').slideToggle()); $('#fade').click(()=>$('.b').fadeToggle()); let i=0; setInterval(()=>{ let all=$('.b'); all.fadeOut(); $(all[i]).fadeIn(); i=(i+1)%all.length;},5000);});
