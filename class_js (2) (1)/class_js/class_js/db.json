@@ -1,0 +1,35 @@
+{
+  "login": [
+    {
+      "username": "user1",
+      "password": "pass1",
+      "id": "b33c"
+    },
+    {
+      "id": "1148",
+      "username": "test",
+      "email": "test@example.com",
+      "password": "Test@123"
+    },
+    {
+      "id": "300f",
+      "username": "vanshikasrivastava112005",
+      "email": "vanshikasrivastava112005@gmail.com",
+      "password": "Anushka@123"
+    },
+    {
+      "id": "3405",
+      "username": "vanshikasrivastava112005",
+      "email": "vanshikasrivastava112005@gmail.com",
+      "password": "Anushka@123"
+    }
+  ],
+  "signUp": [
+    {
+      "username": "newuser1",
+      "password": "newpass1",
+      "email": "newuser1@example.com",
+      "id": "2f2a"
+    }
+  ]
+}
