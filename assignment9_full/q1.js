@@ -1,1 +1,0 @@
-$(function(){let h=new Date().getHours();let g=h<12?'Morning':h<18?'Afternoon':'Evening';$('#greet').text('Good '+g+'!');$('#chg').click(()=>$('#greet').text('Stay positive!'));$('#toggle').click(()=>$('#msg').toggle());$('#greet').click(()=>alert('Greeting clicked'));});
